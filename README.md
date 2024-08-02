@@ -44,11 +44,11 @@ IP Address's                  MAC Address's
 ### Usage
 
 ```sh
-python fast_port.py <IP_ADDRESS_OR_DOMAIN> <START_PORT> <END_PORT> <NUMBER_OF_THREADS>
+python3 fast_port.py <IP_ADDRESS_OR_DOMAIN> <START_PORT> <END_PORT> <NUMBER_OF_THREADS>
 ```
 
 ```sh
-python fast_port.py example.com 20 80 10
+python3 fast_port.py example.com 20 80 10
 ```
 ### Sample Output
 ```sh
@@ -71,11 +71,11 @@ PORT        STATE
 
 ### Usage
 ```sh
-python subd_enum.py -d <TARGET_DOMAIN> -w <WORDLIST_PATH> [-t <NUMBER_OF_THREADS>]
+python3 subd_enum.py -d <TARGET_DOMAIN> -w <WORDLIST_PATH> [-t <NUMBER_OF_THREADS>]
 ```
 
 ```sh
-python subd_enum.py -d example.com -w wordlists/subdomains.txt -t 20
+python3 subd_enum.py -d example.com -w wordlists/subdomains.txt -t 20
 ```
 
 ### Sample output
@@ -97,12 +97,12 @@ python subd_enum.py -d example.com -w wordlists/subdomains.txt -t 20
 ### Usage
 
 ```sh 
-python directory_brute.py -u <TARGET_URL> -w <WORDLIST_PATH> [-t <NUMBER_OF_THREADS>]
+python3 directory_brute.py -u <TARGET_URL> -w <WORDLIST_PATH> [-t <NUMBER_OF_THREADS>]
 ```
 
 
 ```sh
-python directory_brute.py -u http://example.com -w wordlists/common.txt -t 20
+python3 directory_brute.py -u http://example.com -w wordlists/common.txt -t 20
 ```
 
 ### Sample output
@@ -124,10 +124,10 @@ python directory_brute.py -u http://example.com -w wordlists/common.txt -t 20
 
 ### Usage
 ```sh
-python web_crawl.py -d <TARGET_DOMAIN> [-t <NUMBER_OF_THREADS>]
+python3 web_crawl.py -d <TARGET_DOMAIN> [-t <NUMBER_OF_THREADS>]
 ```
 ```sh
-python web_crawl.py -d example.com -t 20
+python3 web_crawl.py -d example.com -t 20
 ```
 
 ### Sample output
