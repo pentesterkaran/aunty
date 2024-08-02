@@ -1,4 +1,3 @@
-#Aunty is still in dev.
 
    ![aunty_logo](https://github.com/pentesterkaran/aunty/blob/main/asset/aunty.png)
 
@@ -6,11 +5,11 @@
 
 ### Features
 
-- **Network Scanning**: Discover devices on your local network by their IP and MAC addresses.
+- **Network Scanning**: Discover devices on your local network by using Address Resolution Protocol.
 
 ### Requirements
 
-Before you run the script, make sure you have the following Python packages installed:
+Before you run the script, Install Required Python packages :
 
 ```sh 
 pip3 install -r requirements.txt
@@ -18,10 +17,10 @@ pip3 install -r requirements.txt
 ### Usage
 
 ```sh 
-python your_script.py -n 192.168.1.0/24
+python3 host_discovery.py -n 192.168.1.0/24
 ```
 
-###Output
+### Output
 ```sh
 [INFO] Network Scanning in Progress...
 [INFO] Scanning network: 192.168.1.0/24
