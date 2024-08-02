@@ -111,3 +111,36 @@ python directory_brute.py -u http://example.com -w wordlists/common.txt -t 20
 [+] Directory Found : http://example.com/login
 [-] Error While requesting page
 ```
+
+## Web Crawler
+
+### Features
+
+- **Multi-Threaded Crawling**: Efficiently crawl subdomains using multiple threads.
+- **Subdomain Discovery**: Uses a list of discovered subdomains from a file.
+- **Link Extraction**: Extracts and logs all links found on the crawled pages.
+- **Color-Coded Output**: View results with clear, color-coded messages.
+- **Output File**: Save discovered links to a file for later review.
+
+### Usage
+```sh
+python web_crawl.py -d <TARGET_DOMAIN> [-t <NUMBER_OF_THREADS>]
+```
+```sh
+python web_crawl.py -d example.com -t 20
+```
+
+### Sample output
+
+```sh
+[+] Found URL : https://subdomain.example.com/page1
+[+] Found URL : https://subdomain.example.com/page2
+```
+
+## Sql injection and XSS scanner script will be re-added soon.
+
+###Contributing
+Contributions are welcome! If you have improvements, suggestions, or bug reports, please submit a pull request or open an issue.
+
+
+#### Happy Hacking
