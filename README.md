@@ -137,9 +137,9 @@ python web_crawl.py -d example.com -t 20
 [+] Found URL : https://subdomain.example.com/page2
 ```
 
-## Sql injection and XSS scanner script will be re-added soon.
+###### Hello Guys, Sql injection and XSS scanner script will be re-added soon.
 
-###Contributing
+### Contributing
 Contributions are welcome! If you have improvements, suggestions, or bug reports, please submit a pull request or open an issue.
 
 
