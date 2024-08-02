@@ -20,7 +20,7 @@ pip3 install -r requirements.txt
 python3 host_discovery.py -n 192.168.1.0/24
 ```
 
-### Output
+### Sample Output
 ```sh
 [INFO] Network Scanning in Progress...
 [INFO] Scanning network: 192.168.1.0/24
@@ -33,7 +33,7 @@ IP Address's                  MAC Address's
 
 ## Port Scan
 
-## Features
+### Features
 
 - **Multi-Threaded Port Scanning**: Scan multiple ports simultaneously to speed up the process.
 - **Port Status**: Identifies whether ports are open or closed.
@@ -41,18 +41,51 @@ IP Address's                  MAC Address's
 - **Customizable Scanning Range**: Specify the range of ports to scan.
 - **Color-Coded Output**: Easily distinguish open and closed ports with color-coded console output.
 
+### Usage
+
 ```sh
-python port_scanner.py <IP_ADDRESS_OR_DOMAIN> <START_PORT> <END_PORT> <NUMBER_OF_THREADS>
+python fast_port.py <IP_ADDRESS_OR_DOMAIN> <START_PORT> <END_PORT> <NUMBER_OF_THREADS>
 ```
 
 ```sh
-python port_scanner.py example.com 20 80 10
+python fast_port.py example.com 20 80 10
 ```
-### Output
+### Sample Output
 ```sh
 PORT        STATE
 20          OPEN
 21          CLOSED
 22          OPEN
 ...
+```
+
+## Directory Brute Force 
+
+
+### Features
+
+- **Multi-Threaded Scanning**: Efficiently brute-force directories using multiple threads.
+- **Configurable Threads**: Control the number of threads used for scanning.
+- **Color-Coded Output**: View results in a clear and visually distinct format.
+- **Custom Wordlists**: Use your own wordlists for directory names.
+
+### Usage
+
+```sh 
+python directory_bruteforcer.py -u <TARGET_URL> -w <WORDLIST_PATH> [-t <NUMBER_OF_THREADS>]
+```
+
+```sh
+python directory_bruteforcer.py -u <TARGET_URL> -w <WORDLIST_PATH> [-t <NUMBER_OF_THREADS>]
+```
+
+```sh
+python directory_bruteforcer.py -u http://example.com -w wordlists/common.txt -t 20
+```
+
+### Sample output
+```sh
+[+] Directory Found : http://example.com/admin
+[+] Directory Found : http://example.com/login
+[-] Error While requesting page
 ```
