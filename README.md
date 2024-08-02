@@ -59,6 +59,31 @@ PORT        STATE
 ...
 ```
 
+## Subdomain Enumeration
+
+### Features
+
+- **Multi-Threaded Subdomain Scanning**: Quickly find subdomains using multiple threads.
+- **Customizable Threads**: Control the number of threads to optimize the scan.
+- **Color-Coded Output**: View results with clear color-coded messages.
+- **Output File**: Save discovered subdomains to a file for later review.
+- **Directory Management**: Automatically create a directory to store result
+
+### Usage
+```sh
+python subd_enum.py -d <TARGET_DOMAIN> -w <WORDLIST_PATH> [-t <NUMBER_OF_THREADS>]
+```
+
+```sh
+python subd_enum.py -d example.com -w wordlists/subdomains.txt -t 20
+```
+
+### Sample output
+```sh
+[+] Subdomain Find : subdomain.example.com
+[+] Subdomain Find : another.example.com
+```
+
 ## Directory Brute Force 
 
 
@@ -72,15 +97,12 @@ PORT        STATE
 ### Usage
 
 ```sh 
-python directory_bruteforcer.py -u <TARGET_URL> -w <WORDLIST_PATH> [-t <NUMBER_OF_THREADS>]
+python directory_brute.py -u <TARGET_URL> -w <WORDLIST_PATH> [-t <NUMBER_OF_THREADS>]
 ```
 
-```sh
-python directory_bruteforcer.py -u <TARGET_URL> -w <WORDLIST_PATH> [-t <NUMBER_OF_THREADS>]
-```
 
 ```sh
-python directory_bruteforcer.py -u http://example.com -w wordlists/common.txt -t 20
+python directory_brute.py -u http://example.com -w wordlists/common.txt -t 20
 ```
 
 ### Sample output
